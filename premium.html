@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium – Autocuidado Completo</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f9f9f9; margin:0; padding:0; color:#333; line-height:1.8; }
+    header { background:#27ae60; color:white; text-align:center; padding:25px 20px; }
+    header h1 { font-size:28px; margin:0; }
+    section { max-width:700px; margin:30px auto; padding:0 20px; text-align:left; }
+    h2 { font-size:26px; color:#27ae60; margin-bottom:16px; line-height:1.4; }
+    p { font-size:18px; margin:14px 0 28px 0; }
+    ul { font-size:18px; line-height:1.8; margin-left:20px; }
+    input[type=password] { padding:12px; width:80%; font-size:16px; margin:15px 0; border-radius:8px; border:1px solid #ccc; }
+    button { padding:14px 24px; font-size:18px; background:#27ae60; color:white; border:none; border-radius:8px; cursor:pointer; font-weight:bold; }
+    button:hover { background:#2ecc71; }
+    .hidden { display:none; }
+    footer { font-size:14px; color:#555; text-align:center; margin-top:40px; padding:20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>💎 Premium – Autocuidado Completo</h1>
+</header>
+
+<section id="password-section">
+  <h2>🔒 Acesso Protegido</h2>
+  <p>Este conteúdo é exclusivo para quem realizou a compra. Por favor, digite a senha para acessar:</p>
+  <input type="password" id="user-password" placeholder="Digite sua senha">
+  <br>
+  <button onclick="checkPassword()">Acessar Conteúdo</button>
+  <p style="font-size:14px; margin-top:10px;">
+    💡 Este guia Premium é um espaço completo de orientação, acolhimento e motivação. Indique para amigas, mas cada pessoa deve ter sua própria experiência única, fortalecendo o **ciclo do autocuidado** e apoiando quem criou este material com carinho.
+  </p>
+</section>
+
+<section id="content-section" class="hidden">
+  <h2>✨ Conteúdo do Mini Premium + Completo</h2>
+  <p>Inclui todos os exercícios, reflexões e checklists do Mini e do Completo, detalhados para o seu dia a dia.</p>
+
+  <h2>🌟 Exercícios Guiados Detalhados</h2>
+  <ul>
+    <li><strong>Respiração consciente:</strong> Sente-se confortavelmente, feche os olhos, inspire contando até 4, segure 2, expire contando até 6. Faça 5 minutos de atenção plena.</li>
+    <li><strong>Diário emocional:</strong> Escreva sentimentos do dia, gatilhos e como reagiu. Reflita sem julgamento e observe padrões.</li>
+    <li><strong>Planejamento de hábitos:</strong> Liste 1 hábito de autocuidado diário, como meditação, caminhada ou leitura. Marque progresso diariamente.</li>
+    <li><strong>Mini-pausas físicas:</strong> Alongamentos curtos, caminhada leve ou movimentos de relaxamento 2x ao dia por 5 minutos.</li>
+    <li><strong>Reflexão sobre relacionamentos:</strong> Liste pessoas e situações que energizam e que sobrecarregam. Ajuste interações quando necessário.</li>
+    <li><strong>Gratidão avançada:</strong> Registre 3 coisas significativas que aconteceram hoje, com foco nos sentimentos positivos.</li>
+    <li><strong>Check-in semanal:</strong> Revise hábitos, emoções e metas. Ajuste sem culpa, celebre pequenas conquistas.</li>
+  </ul>
+
+  <h2>💡 Conteúdo Exclusivo Premium</h2>
+  <ul>
+    <li><strong>Frases motivacionais diárias:</strong> Inspirações para começar o dia com foco e leveza.</li>
+    <li><strong>Lista de afazeres consciente:</strong> Organize tarefas sem sobrecarga, priorizando autocuidado.</li>
+    <li><strong>Lista de metas pessoais:</strong> Defina metas semanais, mensais e registre progresso emocional e físico.</li>
+    <li><strong>Mini-desafios de autocuidado:</strong> Pequenas ações intencionais para melhorar bem-estar diariamente.</li>
+    <li><strong>Momentos de pausa guiados:</strong> Sugestões detalhadas de respiração, relaxamento e meditação com duração e instruções passo a passo.</li>
+  </ul>
+
+  <h2>🧠 Reflexões e Autoobservação</h2>
+  <p>Reserve um momento para se reconectar consigo mesma:</p>
+  <ul>
+    <li>O que me trouxe energia esta semana? E o que me drenou?</li>
+    <li>Que ajustes posso implementar hoje para me sentir mais leve?</li>
+    <li>Como posso respeitar meus limites e honrar meu tempo?</li>
+    <li>Que pequenas ações me dão sensação de prazer e bem-estar?</li>
+  </ul>
+
+  <h2>🌱 Próximo Passo</h2>
+  <p>Use este material como seu guia completo de autocuidado e transformação. Pratique os exercícios, reflita sobre suas metas, e compartilhe inspiração com quem você ama. Cada pessoa deve ter sua própria forma de cuidado, fortalecendo o ciclo do autocuidado e mantendo este espaço vivo e acolhedor.</p>
+</section>
+
+<footer>
+  🌿 *Este material tem caráter informativo e de apoio emocional. Não substitui acompanhamento médico, psicológico ou profissional qualificado.*
+</footer>
+
+<script>
+  function checkPassword() {
+    const senha = "PoderosaArmaDoAutocuidadoUseSemModeraçãoMasDeFormaExclusiva$"; // senha Premium
+    const input = document.getElementById("user-password").value;
+    if(input === senha) {
+      document.getElementById("password-section").classList.add("hidden");
+      document.getElementById("content-section").classList.remove("hidden");
+    } else {
+      alert("Senha incorreta. Verifique e tente novamente.");
+    }
+  }
+</script>
+
+</body>
+</html>
