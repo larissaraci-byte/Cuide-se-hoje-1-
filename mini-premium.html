@@ -27,33 +27,47 @@
 
 <section id="password-section">
   <h2>🔒 Acesso Protegido</h2>
-  <p>Este conteúdo é exclusivo para quem realizou a compra. Digite sua senha:</p>
+  <p>Este conteúdo é exclusivo para quem realizou a compra. Por favor, digite a senha para acessar:</p>
   <input type="password" id="user-password" placeholder="Digite sua senha">
   <br>
   <button onclick="checkPassword()">Acessar Conteúdo</button>
-  <p style="font-size:14px; margin-top:10px;">💡 Cada pessoa deve ter sua própria arma secreta de autocuidado.</p>
+  <p style="font-size:14px; margin-top:10px;">
+    💡 Cada pessoa deve ter sua própria experiência única de autocuidado. Indique para amigas e amigos, mas apenas quem comprou tem acesso completo.  
+    Assim você fortalece o **ciclo do autocuidado** e apoia quem criou este material com muito carinho, compartilhando experiências reais e entendendo que todos precisamos de acolhimento.
+  </p>
 </section>
 
 <section id="content-section" class="hidden">
   <h2>✨ Exercícios Práticos</h2>
   <ul>
-    <li>Respiração consciente: 5 minutos de atenção plena ao corpo.</li>
-    <li>Diário emocional: escreva 3 sentimentos do dia e como reagiu.</li>
-    <li>Mini-pausas físicas: alongamentos curtos ou caminhada.</li>
-    <li>Check-in de energia: 3 tarefas que drenam e 3 que energizam.</li>
-    <li>Gratidão avançada: 3 coisas significativas do dia.</li>
+    <li>Respiração consciente: 5 minutos de atenção plena ao seu corpo.</li>
+    <li>Diário emocional: escreva 3 sentimentos que surgiram hoje e como reagiu.</li>
+    <li>Mini-pausas físicas: alongamentos curtos ou caminhar por 5 minutos.</li>
+    <li>Check-in de energia: liste 3 tarefas que drenam e 3 que energizam você.</li>
+    <li>Gratidão avançada: escreva 3 coisas significativas que aconteceram no dia.</li>
   </ul>
+
+  <h2>🧠 Quiz: como você realmente está?</h2>
+  <ul>
+    <li>Você se sente cansada mesmo sem esforço físico?</li>
+    <li>Tem dificuldade de relaxar sem sentir culpa?</li>
+    <li>Sente que vive no automático, só “cumprindo tarefas”?</li>
+    <li>Se cobra constantemente, mesmo fazendo o seu melhor?</li>
+    <li>Sente que não tem tempo para você?</li>
+    <li>Já se sentiu emocionalmente esgotada sem saber explicar?</li>
+  </ul>
+
   <h2>💡 Reflexão</h2>
-  <p>Use este conteúdo como seu espaço seguro de autocuidado. Inspire-se, pratique e respeite seu próprio ritmo.</p>
+  <p>Use este conteúdo como seu espaço seguro de autocuidado. Pratique, reflita e inspire-se, lembrando que cada pessoa tem seu próprio ritmo e caminho.</p>
 </section>
 
 <footer>
-  🌿 *Material de apoio emocional. Não substitui acompanhamento profissional.*
+  🌿 *Este material tem caráter informativo e de apoio emocional. Não substitui acompanhamento médico, psicológico ou profissional qualificado.*
 </footer>
 
 <script>
   function checkPassword() {
-    const senha = "MiniArmaSecretaAutocuidado$"; // senha segura e única
+    const senha = "MiniArmaSecretaAutocuidado$"; // senha do Mini Premium
     const input = document.getElementById("user-password").value;
     if(input === senha) {
       document.getElementById("password-section").classList.add("hidden");
