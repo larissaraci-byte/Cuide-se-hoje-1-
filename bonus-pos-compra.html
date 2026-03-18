@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bônus Pós-Compra – Cuidados que Acompanham Você</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f9f9f9; color:#333; margin:0; padding:0; line-height:1.8; }
+    header { background:#27ae60; color:white; text-align:center; padding:25px 20px; }
+    header h1 { font-size:28px; margin:0; }
+    section { max-width:700px; margin:30px auto; padding:0 20px; }
+    h2 { color:#27ae60; font-size:24px; margin-bottom:16px; line-height:1.4; }
+    p { font-size:18px; margin:14px 0 28px 0; }
+    ul { font-size:18px; line-height:1.8; margin-left:20px; }
+    input[type=password] { padding:12px; width:80%; font-size:16px; margin:15px 0; border-radius:8px; border:1px solid #ccc; }
+    button { padding:14px 24px; font-size:18px; background:#27ae60; color:white; border:none; border-radius:8px; cursor:pointer; font-weight:bold; }
+    button:hover { background:#2ecc71; }
+    .hidden { display:none; }
+    footer { font-size:14px; color:#555; text-align:center; margin-top:40px; padding:20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌟 Bônus Pós-Compra – Cuidados que Acompanham Você</h1>
+</header>
+
+<section id="password-section">
+  <h2>🔒 Acesso Protegido</h2>
+  <p>Este conteúdo é exclusivo para quem realizou a compra. Por favor, digite a senha para acessar:</p>
+  <input type="password" id="user-password" placeholder="Digite sua senha">
+  <br>
+  <button onclick="checkPassword()">Acessar Conteúdo</button>
+  <p style="font-size:14px; margin-top:10px;">💡 Não compartilhe sua senha com ninguém. Indique para amigas, mas cada uma deve ter sua própria versão do cuidado.</p>
+</section>
+
+<section id="content-section" class="hidden">
+  <p>Parabéns por investir em você! Esse é o seu <strong>material extra</strong>, pensado para que cada momento de autocuidado seja especial. Ele foi criado para te apoiar, motivar e lembrar que você merece atenção, carinho e cuidado todos os dias.</p>
+
+  <h2>✨ Exercícios e Mini-Práticas</h2>
+  <ul>
+    <li>Respiração consciente: 3–5 minutos para se reconectar com você mesma.</li>
+    <li>Check-in rápido de energia: liste 3 coisas que te energizam e 3 que te desgastam.</li>
+    <li>Mini-pausas de movimento: alongamentos ou caminhada curta para liberar tensão.</li>
+  </ul>
+
+  <h2>📝 Diário do Autocuidado</h2>
+  <ul>
+    <li>Escreva como se sentiu hoje, sem julgamento.</li>
+    <li>Liste pequenas vitórias, mesmo que pareçam simples.</li>
+    <li>Reflexão: “O que posso fazer amanhã para me sentir mais leve?”</li>
+  </ul>
+
+  <h2>💡 Frases Motivacionais Exclusivas</h2>
+  <ul>
+    <li>“Você é capaz, mesmo nos dias difíceis.”</li>
+    <li>“Cuidar de você não é luxo, é prioridade.”</li>
+    <li>“Cada pequena ação de autocuidado é um passo gigante para a sua felicidade.”</li>
+  </ul>
+
+  <h2>✅ Lista de Afazeres e Metas</h2>
+  <ul>
+    <li>Crie sua lista de pequenas metas diárias.</li>
+    <li>Organize suas tarefas pensando também no seu bem-estar.</li>
+    <li>Celebre cada conquista, sem culpa!</li>
+  </ul>
+
+  <h2>🌱 Lembrete Especial</h2>
+  <p>Este bônus é <strong>somente seu</strong>, sua arma secreta de autocuidado. Não compartilhe a senha do material completo com ninguém. Você pode indicar para amigas, mas cada uma precisa da sua própria versão, para sentir e praticar o cuidado de forma única.</p>
+</section>
+
+<footer>
+  🌿 *Este material tem caráter informativo e de apoio emocional. Não substitui acompanhamento médico, psicológico ou profissional qualificado.*
+</footer>
+
+<script>
+  function checkPassword() {
+    const senha = "PoderosaArmaDoAutocuidadoUseSemModeraçãoMasDeFormaExclusiva$";
+    const input = document.getElementById("user-password").value;
+    if(input === senha) {
+      document.getElementById("password-section").classList.add("hidden");
+      document.getElementById("content-section").classList.remove("hidden");
+    } else {
+      alert("Senha incorreta. Verifique e tente novamente.");
+    }
+  }
+</script>
+
+</body>
+</html>
