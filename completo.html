@@ -8,7 +8,7 @@
     body { font-family: Arial, sans-serif; background:#f9f9f9; margin:0; padding:0; color:#333; line-height:1.8; }
     header { background:#27ae60; color:white; text-align:center; padding:25px 20px; }
     header h1 { font-size:28px; margin:0; }
-    section { max-width:700px; margin:30px auto; padding:0 20px; }
+    section { max-width:700px; margin:30px auto; padding:0 20px; text-align:left; }
     h2 { font-size:26px; color:#27ae60; margin-bottom:16px; line-height:1.4; }
     p { font-size:18px; margin:14px 0 28px 0; }
     ul { font-size:18px; line-height:1.8; margin-left:20px; }
@@ -22,64 +22,60 @@
 <body>
 
 <header>
-  <h1>📄 Guia Completo – Autocuidado</h1>
+  <h1>💎 Guia Completo – Autocuidado</h1>
 </header>
 
 <section id="password-section">
   <h2>🔒 Acesso Protegido</h2>
-  <p>Este conteúdo é exclusivo para quem adquiriu o guia completo. Digite a senha para acessar:</p>
+  <p>Este conteúdo é exclusivo para quem realizou a compra. Digite sua senha:</p>
   <input type="password" id="user-password" placeholder="Digite sua senha">
   <br>
   <button onclick="checkPassword()">Acessar Conteúdo</button>
-  <p style="font-size:14px; margin-top:10px;">
-    💡 Não compartilhe sua senha. Indique para amigas, mas cada uma deve ter sua própria “arma secreta de autocuidado”.
-  </p>
+  <p style="font-size:14px; margin-top:10px;">💡 Cada pessoa deve ter sua própria arma secreta de autocuidado.</p>
 </section>
 
 <section id="content-section" class="hidden">
-
   <h2>✨ Conteúdo Completo</h2>
-  <p>Bem-vinda ao seu guia completo! Aqui você vai encontrar exercícios, reflexões e mini-desafios para se reconectar, aliviar a sobrecarga e colocar o autocuidado no centro da sua vida.</p>
-
+  <p>Bem-vinda ao seu guia completo! Exercícios, reflexões e mini-desafios para se reconectar e colocar o autocuidado no centro da sua vida.</p>
+  
   <h2>7 Técnicas Profundas de Autocuidado</h2>
   <ul>
-    <li>Respiração consciente detalhada: reconectar corpo e mente por 5 minutos.</li>
-    <li>Diário emocional: identificar emoções e gatilhos diários.</li>
-    <li>Planejamento de hábitos: criar um plano simples de autocuidado diário.</li>
-    <li>Mini-pausas físicas: exercícios curtos de alongamento e relaxamento.</li>
-    <li>Reflexão sobre relacionamentos: identificar fontes de energia e sobrecarga.</li>
-    <li>Gratidão avançada: escrever 3 coisas significativas todos os dias.</li>
-    <li>Check-in semanal: revisar progresso e ajustar hábitos sem culpa.</li>
+    <li>Respiração consciente detalhada</li>
+    <li>Diário emocional</li>
+    <li>Planejamento de hábitos</li>
+    <li>Mini-pausas físicas</li>
+    <li>Reflexão sobre relacionamentos</li>
+    <li>Gratidão avançada</li>
+    <li>Check-in semanal</li>
   </ul>
 
-  <h2>Exercícios Guiados (do Mini Premium)</h2>
+  <h2>Exercícios Guiados</h2>
   <ul>
-    <li>☑ Pausa de respiração de 5 minutos 2x ao dia</li>
-    <li>☑ Diário emocional noturno</li>
-    <li>☑ Alongamentos curtos durante o dia</li>
-    <li>☑ Check-in de energia: liste 3 tarefas que drenam e 3 que energizam você</li>
-    <li>☑ Pequenos momentos de prazer intencional</li>
+    <li>Pausa de respiração 2x ao dia</li>
+    <li>Diário emocional noturno</li>
+    <li>Alongamentos curtos</li>
+    <li>Revisão de hábitos semanal</li>
+    <li>Pequenos momentos de prazer intencional</li>
   </ul>
 
   <h2>Reflexões Profundas</h2>
   <ul>
     <li>O que tem me energizado e o que tem me desgastado?</li>
     <li>Quais hábitos posso ajustar para me sentir mais leve?</li>
-    <li>Que pequenas mudanças posso implementar ainda hoje?</li>
+    <li>Que pequenas mudanças posso implementar hoje?</li>
   </ul>
 
   <h2>🌱 Próximo passo</h2>
-  <p>Use este material como sua arma secreta de autocuidado. Reflita, pratique e compartilhe inspiração com amigas, mas lembre-se: cada uma deve ter sua própria senha exclusiva para acessar. Este guia é seu espaço de cuidado e reconexão.</p>
-
+  <p>Use sua <strong>arma poderosa completa de transformação e autocuidado</strong>. Inspire-se, pratique e compartilhe motivação, mas lembre-se: cada pessoa tem sua própria arma secreta.</p>
 </section>
 
 <footer>
-  🌿 *Este material tem caráter informativo e de apoio emocional. Não substitui acompanhamento médico, psicológico ou profissional qualificado.*
+  🌿 *Material de apoio emocional. Não substitui acompanhamento profissional.*
 </footer>
 
 <script>
   function checkPassword() {
-    const senha = "PoderosaArmaDoAutocuidadoUseSemModeraçãoMasDeFormaExclusiva$";
+    const senha = "ArmaPoderosaCompletaAutocuidado$"; // senha única e segura
     const input = document.getElementById("user-password").value;
     if(input === senha) {
       document.getElementById("password-section").classList.add("hidden");
